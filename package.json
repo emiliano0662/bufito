@@ -1,0 +1,22 @@
+{
+  "name": "bufito",
+  "version": "1.0.0",
+  "description": "Maqueta Bufito",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node_modules/.bin/webpack -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emiliano0662/bufito.git"
+  },
+  "author": "Emiliano Carreño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emiliano0662/bufito/issues"
+  },
+  "homepage": "https://github.com/emiliano0662/bufito#readme"
+}

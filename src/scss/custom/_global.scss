@@ -1,0 +1,30 @@
+
+* {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+header,
+footer,
+section,
+article {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+}
+
+@media (max-width: $screen-md) {
+
+}
+
+@media (max-width: $screen-sm) {
+
+}
