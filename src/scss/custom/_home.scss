@@ -12,7 +12,11 @@
         &:nth-of-type(2) {
             margin-top: 40px;
             padding: 50px 0px 75px 0px;
-            background: transparent url('../img/img-spoon.png') right bottom / cover no-repeat;
+            background-color: transparent;
+            background-image: url('../img/img-spoon.png'), url('../img/bg-spoon.png');
+            background-position: right bottom, left top;
+            background-repeat: no-repeat, no-repeat;
+            background-size:  300px auto, 100% 100%;
 
             .col-md-4 {
 
@@ -35,6 +39,11 @@
                     font-family: 'Helvetica';
                     font-size: 20px;
                     color: #FFF;
+                    
+                    a {
+                        font-weight: 700;
+                        color: #FFF;
+                    }
                 }
             }
         }
@@ -107,16 +116,23 @@
             .col-md-3 {
 
                 .img-responsive {
+                    max-width: 140px;
                     margin: 0px auto;
                 }
 
-                p {
+                a {
+                    width: 100%;
+                    float: left;
+                    text-decoration: none;
                     margin: 20px 0px 0px 0px;
-                    line-height: 40px;
                     font-family: 'walkway_roundedregular';
                     text-align: center;
-                    font-size: 40px;
+                    font-size: 30px;
                     color: #FFF;
+
+                    &:nth-of-type(2) {
+                        margin-top: 0px;
+                    }
                 }
             }
         }
