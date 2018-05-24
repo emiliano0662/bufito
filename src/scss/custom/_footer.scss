@@ -1,3 +1,26 @@
 footer {
-   
+    height: 246px;
+    background: #FFF url('../img/bg-footer.png') left bottom / 100% auto no-repeat;
+}
+
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+
+    footer {
+        height: 200px;
+    }  
+}
+
+@media (max-width: $screen-md) {
+
+    footer {
+        height: 170px;
+    }  
+}
+
+@media (max-width: $screen-sm) {
+
+    footer {
+        height: 100px;
+        background: #FFF url('../img/bg-footer.png') left bottom / 100% 100% no-repeat;
+    }  
 }

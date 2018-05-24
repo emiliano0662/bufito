@@ -12,6 +12,36 @@ $(document).ready(function() {
 		$('body,html').animate({ scrollTop: $(seccion).offset().top }, 1000, 'swing');
 	});
 
+	var owl_carousel_main = $('#owl-carousel-main').owlCarousel({
+		loop: true,
+		margin: 10,
+		nav: false,
+		dots: false,
+		responsive: {
+			0: {
+				items: 1
+			},
+			600: {
+				items: 2
+			},
+			1000: {
+				items: 2
+			}
+		}
+	});
+
+	$(".btn-left-owl").on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_main.trigger('prev.owl.carousel');
+	});
+
+	$(".btn-right-owl").on('click', function (event) {
+		event.preventDefault();
+
+		owl_carousel_main.trigger('next.owl.carousel');
+	});
+
 	$("[data-dinaanim]").each(function () {
 
 		var $this = $(this);

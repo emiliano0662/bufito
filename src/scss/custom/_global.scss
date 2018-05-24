@@ -1,7 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+@font-face {
+    font-family: 'walkway_roundedregular';
+    src: url('../fonts/walkway-rounded/walkway_rounded-webfont.woff2') format('woff2'),
+         url('../fonts/walkway-rounded/walkway_rounded-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+ 	font-family: 'Helvetica';
+	src: url('../fonts/helvetica/Helvetica.eot?#iefix') format('embedded-opentype'), 
+	 	 url('../fonts/helvetica/Helvetica.woff') format('woff'),
+	  	 url('../fonts/helvetica/Helvetica.ttf')  format('truetype'),
+	  	 url('../fonts/helvetica/Helvetica.svg#Helvetica') format('svg');
+  	font-weight: normal;
+  	font-style: normal;
+}
 
 * {
+	//font-family: 'walkway_roundedregular';
+    font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 400;
-	font-size: 14px;
+	font-size: 20px;
 }
 
 body {

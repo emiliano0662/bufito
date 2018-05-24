@@ -1,9 +1,9 @@
 nav.navbar {
-    padding: 30px 0px 22px 0px;
+    padding: 50px 0px 20px 0px;
     margin: 0px;
     border-radius: 0px;
     border: none;
-    background-color: #FFF;
+    background: #FFF url('../img/bg-header.png') left top / 100% auto no-repeat;
 
     .col-md-4 {
 
@@ -18,29 +18,47 @@ nav.navbar {
     }
 
     .col-md-8 {
-        margin-top: 20px;
+        margin-top: 300px;
 
         .navbar-nav {
 
             > li {
+                padding: 0px 2px;
 
                 > a {
-                    padding: 0px 15px;
-                    background-color: transparent;
+                    padding: 3px 10px;
                     text-align: center;
-                    color: #717171;
+                    text-decoration: none;
+                    font-family: 'Arial';
+                    font-size: 18px;
+                    color: #4c4c4c;
+                    background: transparent url('../img/bg-border-menu.png') left top / 100% 100% no-repeat;
                     
                     &.active,
                     &:hover {
-                        text-decoration: underline;
                         color: #b3b3b3;
                     }
                 }
+            }
+        }
+    }
+}
 
-                &:last-child {
+@media  (min-width: $screen-md) and (max-width: $screen-lg) {
+      
+    nav.navbar {
+
+        .col-md-8 {
+            margin-top: 240px;
+
+            .navbar-nav {
+
+                > li {
+                    padding: 0px 2px;
 
                     > a {
-                        padding: 0px 0px 0px 15px;
+                        padding: 3px 9px;
+                        font-size: 16px;
                     }
                 }
             }
@@ -49,9 +67,63 @@ nav.navbar {
 }
 
 @media (max-width: $screen-md) {
-      
+
+    nav.navbar {
+
+        .col-md-8 {
+            margin-top: 190px;
+
+            .navbar-nav {
+
+                > li {
+
+                    > a {
+                        padding: 3px 4px;
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: $screen-sm) {
 
+    nav.navbar {
+        padding: 10px 0px 10px 0px;
+        background: #FFF url('../img/bg-header.png') left top / 100% 50px no-repeat;
+
+        .col-md-4 {
+
+            .navbar-header {
+                
+                .navbar-brand {
+                    
+                    .img-responsive {
+                        max-width: 100px;
+                    }
+                }
+
+                .navbar-toggle {
+                    margin-top: 25px;
+                    background-color: #FFF;
+                }
+            }
+        }
+
+        .col-md-8 {
+            margin-top: 0px;
+
+            .navbar-nav {
+
+                > li {
+
+                    > a {
+                        padding: 12px 4px;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
 }
